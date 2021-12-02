@@ -54,7 +54,7 @@
 
     <nav class="navbar navbar-custom navbar-expand-md sticky-top">
         <div class="container">
-            <a class="navbar-brand text-white" href="https://www.netvertisement.org/"> <img src="/home/theanh/Pictures/logo.svg" width="130" height="110" alt=""></a>
+            <a class="navbar-brand text-white" href="https://www.netvertisement.org/"> <img src="logo.svg" width="130" height="110" alt=""></a>
             <button class="custom-toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
                 aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
