@@ -12,8 +12,13 @@
     <title>Netvertisement</title>
 
     <style>
+
+      .logo{
+        margin-left: 100px;
+        margin-top: 0px;
+      }
     
-/* .navbar-toggler-icon{
+.navbar-toggler-icon{
   border-color: white;
 }
 
@@ -22,12 +27,8 @@
         font-size: 1.1rem;
         padding: 0 0.8rem;	
      	font-weight: 650;
-     }  */
+     } 
 
-
- .navbar{
-   background-color: black;
- }
 
     .jumbotron-custom {
       background-color:  black;
@@ -53,6 +54,9 @@
   position: relative;
 }
 
+text.e1{
+display: block;
+}
       
 </style>
 
@@ -60,33 +64,34 @@
 
 
 <body data-bs-spy="scroll" data-bs-target=" .navbar" data-bs-offset="50" >
-  
-  <nav class="navbar navbar-expand-md navbar-dark ">
-    <div class="container-fluid">
-      <a class="navbar-brand text-white" href="https://www.netvertisement.org/"> <img src="logo.svg" width="130" height="110" alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon "></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link  text-white text-center" href="#scrollpsyToAboutUs">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white  text-center" href="#scrollpsyToBooking">Booking</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link  text-white text-center" href="#scrollpsyToContact">Contact</a>
-            </li>
-          </ul>
-          
-        </div>
-      </div>
-    </nav>
-    <div class="jumbotron jumbotron-custom jumbotron-fluid text-center text-white">
-  
 
+    <nav class="navbar navbar-custom navbar-expand-md navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white logo" href="https://www.netvertisement.org/"> <img src="logo.svg" width="130" height="110" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                        <a class="nav-link  text-white text-center" href="#scrollpsyToAboutUs">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white  text-center" href="#scrollpsyToBooking">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-white text-center" href="#scrollpsyToContact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+            
+        </div>
+    </nav>
+
+   
+  <div class="jumbotron jumbotron-custom jumbotron-fluid text-center text-white">
     <h1>Netvertisement</h1>
     <p class= "text-muted">Scaling onliene businesses and get better results.</p>
   	</div>
@@ -125,17 +130,19 @@
         </div>
     </div>
 
-<div class="break">
-</div>
+<div class="break"></div>
 
 
 
 <div id="scrollpsyToAboutUs" class="jumbotron jumbotron-custom1 jumbotron-fluid text-center text-white ">
 
 <h1>About Us</h1>
-<p>Basic information...........</p>
+<p class="d-inline-block text-muted" style="max-width: 1080px;">
+Netvertisement is a marketing and consulting agency that scales up e-commerce businesses as well as improves their approach to marketing strategies which will result in greater awareness of their brand. 
+  Our team will make sure that we maximize your profits by precisely analyzing the market and appealing to your targeted audience. 
+  We’re a team of reliable, flexible and knowledgeable people that will help you get better results as well as promote further growth in your business. 
+  It’s simultaneously in our best interest to establish a business relationship with our clients sharing mutual trust, together with a friendly environment.</p>
 </div>
-
 
 <div class="break"></div>
 
