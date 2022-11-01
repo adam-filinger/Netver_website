@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 4000 3580" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1.45506,0,0,1.45506,190.304,2077.48)">
+        <g>
+            <g transform="matrix(1,0,0,1,146.215,520.725)">
+                <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:215.962px;fill:white;">N</text>
+            </g>
+            <g transform="matrix(1,0,0,1,319.021,520.725)">
+                <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:215.962px;fill:white;">ETVER<tspan x="716.112px 848.03px " y="0px 0px ">TI</tspan>SEMENT</text>
+            </g>
+        </g>
+    </g>
+    <g transform="matrix(5.98481,0,0,5.57554,-441.789,-58.6331)">
+        <ellipse cx="408" cy="298" rx="138" ry="144" style="fill:white;"/>
+    </g>
+    <g transform="matrix(103.579,0,0,103.579,1566.29,2044.05)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(2,36,106);">N</text>
+    </g>
+</svg>
