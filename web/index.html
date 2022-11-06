@@ -32,9 +32,9 @@
    <!-- body -->
    <body class="main-layout">
       <!-- loader  -->
-      <div class="loader_bg">
+      <!-- <div class="loader_bg">
          <div class="loader"><img src="images/loading.gif" alt="#" /></div>
-      </div>
+      </div> -->
       <!-- end loader -->
       <!-- header -->
       <header>
@@ -46,7 +46,7 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="index.html"><img src="images/2logo.svg" alt="#" /></a>
+                              <a href="index.html"><img src="images/2logo.svg" style="height:100px" alt="#" /></a>
                            </div>
                         </div>
                      </div>
@@ -57,9 +57,10 @@
                         <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
-                           <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
-                                 <a class="nav-link" href="index.html">Home</a>
+
+                         <ul class="navbar-nav mr-auto">
+                              <li class="nav-item">
+                               <a class="nav-link" href="#home">Home</a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="#titlepage">O nás</a>
@@ -81,9 +82,22 @@
       <!-- end header inner -->
       <!-- end header -->
       <!-- banner -->
-      <section class="banner_main">
-        <h1>NETVERTSIEMNT</h1><br>
-        <p>pomáháme rozjet a spravujeme online marketingové kampaně pro větší dosah Vaší firmy</p>
+      <section class="banner_main" id="home" >
+
+         <div class="row row-cols-auto justify-content-center m-3 p-3">
+            <div class="col"><h1>NETVERTISEMENT</h1>
+               <p>pomáháme rozrůstat Vaši značku a spravujeme online marketingové kampaně pro větší dosah Vaší firmy</p>
+               <button class="banner-button"><a class="nav-link" href="#BookingCall">Objednat si schůzku</a></button>
+            </div>
+
+
+            <div class="col">
+              <img src="images/mountain-removebg-preview.png" class="img-fluid" alt="#" />
+            </div>
+
+          </div>
+
+        
       </section>
       <!-- end banner -->
       <!-- team -->
@@ -92,14 +106,14 @@
             <div class="row d_flex">
                <div class="col-md-5">
                   <div class="team_img">
-                     <figure><img src="images/blog_img3.webp" alt="#"/></figure>
+                     <figure><img src="images/blog_img3__1_-removebg-preview.png" alt="#"/></figure>
                   </div>
                </div>
                <div class="col-md-6 offset-md-1">
-                  <div class="titlepage" id="titlepage">
+                  <div class="titlepage" >
                      <h2>Náš tým vytvoří kampaň přímo pro Vás</h2>
                      <p>Záleží nám na tom, aby každý zákáník dostal kampaň přesně šitou jeho potřebám</p>
-                     <a class="read_more" href="#">Více</a>
+                     <a class="read_more" href="#read_more">Více</a>
                   </div>
                </div>
             </div>
@@ -120,23 +134,23 @@
                   <div class="col-md-4">
                      <div id="serv_hover"  class="services_box">
                         <i><img src="images/service1.png" alt="#"/></i>
-                        <h3>Vytvoření kamapaně</h3>
-                        <p>Kampaň vytvořeníme na základě Vašeho nejlepšího obsahu (fotky, nabídky, obsahy webových stránek ...)</p>
+                        <h3>Vytváření kamapaní</h3>
+                        <p>Kampaň vytváříme na základě Vašich silných stránek s relevantním obsahem pro Vaše potencionální zákazníky (fotky, nabídky, obsahy webových stránek ...)</p>
                      </div>
                   </div>
                   <div class="col-md-4">
                      <div id="serv_hover" class="services_box">
                         <i><img src="images/service3.png" alt="#"/></i>
                         <h3>Zacílení</h3>
-                        <p>Nikdo nezná Vaši cílovou skupinu lépe než Vy, proto po důkladné konzulutaci vytvoříme model
-                           Vašho ideálního zákazníka na kterého zacílíme kampaň</p>
+                        <p>Nikdo nezná Vaši cílovou skupinu lépe než Vy, proto po důkladné konzulutaci s Vámi a zkoumání všech dostupných dat vytvoříme model
+                           Vašeho ideálního zákazníka na kterého zacílíme kampaň</p>
                      </div>
                   </div>
                   <div class="col-md-4">
                      <div id="serv_hover" class="services_box">
                         <i><img src="images/service2.png" alt="#"/></i>
                         <h3>Vylepšování</h3>
-                        <p>Kampaně běží nezávisle, ovšem stále vyžadují vylepšování tak, aby se dosáhlo nejlepšího výsledku</p>
+                        <p>Kampaně běží nezávisle, ovšem stále vyžadují vylepšování tak, aby se dosáhlo nejlepšího možného výsledku</p>
                      </div>
                   </div>
                </div>
@@ -148,37 +162,121 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-10">
-                     <div class="titlepage">
-                        <h2> Větší zisky & širší klientela</h2>
+                     <div class="titlepage" id ="read_more">
+                        <h2> Oslovení více zákazníků & rozrůstání vaší značky</h2>
                         
                      </div>
                   </div>
                </div>
-               <div class="border_trbl">
-                  <div class="row">
-                     <p>Nejpoužívanější medium pro vyhledávání služeb či produktů je internet,
-                      je proto velice důležité, aby právě Vaše služby či produkt byl na internetu vidět. 
-                      Přesně o to se stará <strong>Netvertisement</strong>. Vytvoříme kampaň přesně pro Vás a vaši službu (produkt), 
-                        tu posléze zacílíme tak, aby byla zajištěna její největší efektivita a Vy tak neutráceli zbytečně za reklamny
-                        pro lidi, kteří o Vaši službu (produkt) nestojí.
-                    </p>
+               <p></p>>
+                    <div class="container">
+                     <div class="row d_flex">
+                        <div class="col-md-5">
+                         
+                           <div class="team_img">
+                              <figure><img src="images/awareness.png" alt="#"/></figure>
+                           </div>
+                        </div>
+                        <div class="col-md-6 offset-md-1">
+                           <div class="titlepage" >
+            
+                              <h2>Rozšiřte mínění o Vaší společnosti</h2>
+                              <p>Nejpoužívanější nástroj pro vyhledávání služeb či produktů je <b>vyhledávač na internetu</b>. 
+                                 Lidé vždy chtějí top kvalitu a proto chtějí vědet více nejen o tom co nabízíte, ale taky o <b>kultuře Vaší firmy a co právě představuje</b>.
+                                  Je proto velice důležité, aby právě Vaše služby či produkty byly na internetu nejen vidět, ale i reprezentovány ve své celé kráse, 
+                                 protože na konci dne Vám <b>nebude nic platné</b>, že máte ohromný produkt či službu, když o ní lidé nebudou vědět.
+                                 Přesně o to se stará <b>Netvertisement</b>. Vytváříme a spravujeme reklamní kampaně přesně pro Vás a Vaší službu či produkt, 
+                                   ty posléze zacílíme tak, aby byla zajištěna jejich největší efektivita a Vy tak oslovili Vaší cílovou skupinu <b>bez ztráty času, peněz a energie z Vaší strany</b>, protože to Vás bude právě brzdit od rozrůstání Vaší firmy.
+                               </p>                             
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+             
+                  
+                <div class="container" id="titlepage">
+                  <div class="row d_flex">
+                   
+                     <div class="col-md-6 offset-md-1">
+                        <div class="titlepage" >
+                           <h2>Naše služby a motto</h2>
+                           <p>Specializujeme se na <b>placené reklamní kampaně</b> přes platformu Google. 
+                              Není nám ale ani cizí provoz reklamních kampaní na <b>sociálních sítí</b>(Facebook, Instagram, TikTok).
+                              Ale jak jsme podotkli v minulém textu, velice důležitým bodem je <b>firemní kultura</b>. Ta pro nás bývá jednou z nejpodstatnějších komponent. 
+                              U nás v <b>Netvertisement</b> se snažíme soustředit na jednu věc a plynule ji ovládat. V našem přépadě jsou to <b>Google Ads</b>. 
+                              Řídíme se mottem <b>"méně je více"</b>. V dnešní době se vyskytuje mnoho všeho a vždy člověk <b>skáče z jedné věci na druhou, bez toho aby plně ovládal jednu</b>.
+                              Z naší strany věříme plně v maximální využití jednoho hlavního nástroje pro její <b>největší effektivitu</b>. 
+                        </div>
+                    
+                     </div>
+                   
+                     <div class="col-md-5">
+                        
+                        <div class="team_img">
+                           <figure><img src="images/company_culture-removebg-preview.png" alt="#"/></figure>
+                        </div>
+                     </div>
+
                   </div>
                </div>
-               <div class="row">
-                <div class="col-md-10">
-                   <div class="titlepage">
-                      <h2> Google Ads</h2>
-                      
+               <div class="container" >
+                  <div class="row d_flex">
+
+                     <div class="col-md-5">
+                        <div class="titlepage">
+                           <h1>Google Ads</h1>
+                           
+                        </div>
+                        <div class="team_img">
+                           <figure><img src="images/Google_Ads-removebg-preview.png" alt="#"/></figure>
+                        </div>
+                     </div>
+                   
+                     <div class="col-md-6 offset-md-1">
+                        <div class="titlepage" >
+                           <h2>Proč Google Ads?</h2>
+                           <p>Stejně jako <b>závodník ve F1</b> si musíme vybrat vozidlo, které nás <b>doveze přímo do cíle</b>. <b>Google Ads</b> byl tou naší volbou a existuje proto mnoho důvodů. Google není jen nejpoužívanější vyhledávač, ovšem také <b>největší databáze informací</b>. 
+                              Z toho důvodu je naší primární platformou, na které provozujeme reklamní kampaně pro naše klienty. Přes léta vyhledávání nasbíral Google velkou kvantitu dat o jeho uživatelích, které zjednodušuje proces <b>zacílení na Vaší cílovou skupinu</b>. 
+                              Také z pohledu Googlu se na jeho vyhledávání podílí lidé, kteří předem <b>projevovali zájem</b> o koupi produktu či služby. V důsledku to pak znamená značně <b>vyšší konverze</b> oproti sociálním sítím či-li u větší část lidí bude pravděpodobnost, že <b>se stanou Vašimi stálými zákazníky</b> a zakoupí si u Vás zvolené produkty/služby. 
+                           </p>
+                           </div>
+                     </div>
                    </div>
-                </div>
-             </div>
-             <div class="border_trbl">
-                <div class="row">
-                   <p>Google není jen nejpoužívanější vyhledávač, ovšem také největší databáze informací.
-                    Z toho důvodu je naší primární platformou<br> na které provozujeme Vaše reklamny
-                  </p>
-                </div>
-             </div>
+               </div>
+
+               <div class="container" >
+                  <div class="row d_flex">
+
+                           
+                           <div class="col-md-6 offset-md-1">
+                              <div class="titlepage" >
+                                 <h2>Proč spolupráce s námi?</h2>
+                                 <p> Pokud jste se dočetli o nás až sem, pravděpodobně Vás zaujala alespoň jedna z dvou věcí, <b>naše služby nebo naše firemní kultura</b>.
+                                     Pro nás náš cíl zůstává stále neměnným, chceme pracovat bok po boku s našimi klienty, pomoct jim rozrůstat jejich podnik, <b>dosáhnout dalších milníků</b> a <b>společně dostat naše klienty do cílové roviny s výsledky, které si zaslouží</b>.
+                                     Snažíme se jen spolupracovat s firmami, které <b>vědí kam se chtějí dostat a jsou ochotny do toho jít naplno</b>. Pokud to co popisujeme, zní jako Váš podnik, tak neváhejte si zde na našich stránek <b>objednat online schůzku nebo osobní schůzku přes náš mail v sekci kontakty</b>.
+                                     Budume se na Vás těšit, <b>tým Netvertisement</b>.
+                                 </p>
+                                 </div>
+                              </div>
+
+
+                                 <div class="col-md-5">
+                        <div class="team_img">
+                           <figure><img src="images/collab.png" alt="#"/></figure>
+                        </div>
+                     
+                   
+                     </div>
+
+                   </div>
+               </div>
+
+
+
+
+               <div class="container-calendar" id="BookingCall"> 
+                  <div class="calendly-inline-widget" data-url="https://calendly.com/theanhdang239?hide_landing_page_details=1&hide_gdpr_banner=1" style="min-width:320px;height:630px;"></div>
+                  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
             </div>
          </div>
       </div>
@@ -191,18 +289,19 @@
          <div class="container">
             <div class="row">
                <h1>Kontakt</h1>
-               <p>Pokud chcete vědět více můžete nám napsat na email, Instagram či LinkedIn</p>
-               <p>Pro zájemce je možné sjednat online nebo osobní schůzku</p>
-               <p>-osobní schůzku je nutné sjednat přes email</p>
-               <table>
-                  <tr>
-                     <td>Email</td>
-                     <td>theanhdang@netvertisement.org</td>
-                  </tr>
-               </table>
+               <p>Pokud chcete vědět více můžete se na nás obrátit na email, Instagram či LinkedIn.
+               Rádi Vám se vším poradíme.
+               Pro zájemce je možné sjednat online nebo osobní schůzku.
+               Osobní schůzku je nutné sjednat přes email.
+               </p>
+              
+               <p>email: theanhdang@netvertisement.org</p>
+
+
                <ul class="social_icon">
                   <li><a href="https://www.linkedin.com/company/netvertisement/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
                   <li><a href="https://www.instagram.com/netvertisement/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="mailto:theanhdang@netvertisement.org"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
                </ul>
             </div>
          </div>
@@ -221,7 +320,7 @@
                <div class="container">
                   <div class="row">
                      <div class="col-md-10 offset-md-1">
-                        <p>© 2019 All Rights Reserved Netvertisement</p>
+                        <p>© 2022 All Rights Reserved Netvertisement</p>
                      </div>
                   </div>
                </div>
