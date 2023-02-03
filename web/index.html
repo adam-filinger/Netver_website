@@ -28,9 +28,12 @@
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      
+
    </head>
+   
    <!-- body -->
-   <body class="main-layout">
+   <body class="main-layout" onload="translate('cz', 'lng-tag')">
       <!-- loader  -->
       <!-- <div class="loader_bg">
          <div class="loader"><img src="images/loading.gif" alt="#" /></div>
@@ -46,7 +49,7 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="index.html"><img src="images/2logo.svg" style="height:100px" alt="#" /></a>
+                              <a><img src="images/2logo.svg" style="height:100px" alt="#" /></a>
                            </div>
                         </div>
                      </div>
@@ -63,15 +66,22 @@
                                <a class="nav-link" href="#home">Home</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="#titlepage">O nás</a>
+                                 <a class="nav-link" href="#titlepage" lng-tag="aboutUs">O nás</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="#services">Naše služby</a>
+                                 <a class="nav-link" href="#services" lng-tag="ourServices">Naše služby</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="#contact">Kontakt</a>
+                                 <a class="nav-link" href="#contact" lng-tag="ourContact">Kontakt</a>
                               </li>
+                              <li>
+                                 <a class="nav-link js-scroll-trigger lng" id="enTranslator" href="javascript:void(0);">EN</a>
+                                 <a class="nav-link js-scroll-trigger lng" id="czTranslator" href="javascript:void(0);">CZ</a>
+                              </li>
+                                 
+                              
                            </ul>
+                           
                         </div>
                      </nav>
                   </div>
@@ -82,12 +92,13 @@
       <!-- end header inner -->
       <!-- end header -->
       <!-- banner -->
+      
       <section class="banner_main" id="home" >
 
          <div class="row row-cols-auto justify-content-center m-3 p-3">
             <div class="col"><h1>NETVERTISEMENT</h1>
-               <p>pomáháme rozrůstat Vaši značku a spravujeme online marketingové kampaně pro větší dosah Vaší firmy</p>
-               <button class="banner-button"><a class="nav-link" href="#BookingCall">Objednat si schůzku</a></button>
+               <p lng-tag="info">pomáháme rozrůstat Vaši značku a spravujeme online marketingové kampaně pro větší dosah Vaší firmy</p>
+               <button class="banner-button"><a class="nav-link" href="#BookingCall" lgn-tag="booking">Objednat si schůzku</a></button>
             </div>
 
 
@@ -111,9 +122,9 @@
                </div>
                <div class="col-md-6 offset-md-1">
                   <div class="titlepage" >
-                     <h2>Náš tým vytvoří kampaň přímo pro Vás</h2>
-                     <p>Záleží nám na tom, aby každý zákáník dostal kampaň přesně šitou jeho potřebám</p>
-                     <a class="read_more" href="#read_more">Více</a>
+                     <h2 lng-tag="campaignForU">Náš tým vytvoří kampaň přímo pro Vás</h2>
+                     <p lng-tag="weCare">Záleží nám na tom, aby každý zákáník dostal kampaň přesně šitou jeho potřebám</p>
+                     <a class="read_more" href="#read_more" lng-tag="more">Více</a>
                   </div>
                </div>
             </div>
@@ -125,7 +136,7 @@
                <div class="row">
                   <div class="col-md-10 offset-md-1">
                      <div class="titlepage">
-                        <h2>Jak to děláme</h2>
+                        <h2 lng-tag="howWeDoIt">Jak to děláme</h2>
                         <p></p>
                      </div>
                   </div>
@@ -134,23 +145,23 @@
                   <div class="col-md-4">
                      <div id="serv_hover"  class="services_box">
                         <i><img src="images/service1.png" alt="#"/></i>
-                        <h3>Vytváření kamapaní</h3>
-                        <p>Kampaň vytváříme na základě Vašich silných stránek s relevantním obsahem pro Vaše potencionální zákazníky (fotky, nabídky, obsahy webových stránek ...)</p>
+                        <h3 lng-tag="campaignCreate">Vytváření kamapaní</h3>
+                        <p lng-tag="campaignBased">Kampaň vytváříme na základě Vašich silných stránek s relevantním obsahem pro Vaše potencionální zákazníky (fotky, nabídky, obsahy webových stránek ...)</p>
                      </div>
                   </div>
                   <div class="col-md-4">
                      <div id="serv_hover" class="services_box">
                         <i><img src="images/service3.png" alt="#"/></i>
-                        <h3>Zacílení</h3>
-                        <p>Nikdo nezná Vaši cílovou skupinu lépe než Vy, proto po důkladné konzulutaci s Vámi a zkoumání všech dostupných dat vytvoříme model
+                        <h3 lgn-tag="targeting">Zacílení</h3>
+                        <p lng-tag="nowOneKnows">Nikdo nezná Vaši cílovou skupinu lépe než Vy, proto po důkladné konzulutaci s Vámi a zkoumání všech dostupných dat vytvoříme model
                            Vašeho ideálního zákazníka na kterého zacílíme kampaň</p>
                      </div>
                   </div>
                   <div class="col-md-4">
                      <div id="serv_hover" class="services_box">
                         <i><img src="images/service2.png" alt="#"/></i>
-                        <h3>Vylepšování</h3>
-                        <p>Kampaně běží nezávisle, ovšem stále vyžadují vylepšování tak, aby se dosáhlo nejlepšího možného výsledku</p>
+                        <h3 lng-tag="improving">Vylepšování</h3>
+                        <p lng-tag="campaignImproving">Kampaně běží nezávisle, ovšem stále vyžadují vylepšování tak, aby se dosáhlo nejlepšího možného výsledku</p>
                      </div>
                   </div>
                </div>
@@ -163,7 +174,7 @@
                <div class="row">
                   <div class="col-md-10">
                      <div class="titlepage" id ="read_more">
-                        <h2> Oslovení více zákazníků & rozrůstání vaší značky</h2>
+                        <h2 lng-tag="moreClients"> Oslovení více zákazníků & rozrůstání vaší značky</h2>
                         
                      </div>
                   </div>
@@ -181,8 +192,8 @@
                         <div class="col-md-6 offset-md-1">
                            <div class="titlepage" >
             
-                              <h2>Rozšiřte mínění o Vaší společnosti</h2>
-                              <p>Nejpoužívanější nástroj pro vyhledávání služeb či produktů je <b>vyhledávač na internetu</b>. 
+                              <h2 lng-tag="outReach">Rozšiřte mínění o Vaší společnosti</h2>
+                              <p lng-tag="internetWay">Nejpoužívanější nástroj pro vyhledávání služeb či produktů je <b>vyhledávač na internetu</b>. 
                                  Lidé vždy chtějí top kvalitu a proto chtějí vědet více nejen o tom co nabízíte, ale taky o <b>kultuře Vaší firmy a co právě představuje</b>.
                                   Je proto velice důležité, aby právě Vaše služby či produkty byly na internetu nejen vidět, ale i reprezentovány ve své celé kráse, 
                                  protože na konci dne Vám <b>nebude nic platné</b>, že máte ohromný produkt či službu, když o ní lidé nebudou vědět.
@@ -200,8 +211,8 @@
                    
                      <div class="col-md-6 offset-md-1">
                         <div class="titlepage" >
-                           <h2>Naše služby a motto</h2>
-                           <p>Specializujeme se na <b>placené reklamní kampaně</b> přes platformu Google. 
+                           <h2 lng-tag="ourMotto">Naše služby a motto</h2>
+                           <p lng-tag="motto">Specializujeme se na <b>placené reklamní kampaně</b> přes platformu Google. 
                               Není nám ale ani cizí provoz reklamních kampaní na <b>sociálních sítí</b>(Facebook, Instagram, TikTok).
                               Ale jak jsme podotkli v minulém textu, velice důležitým bodem je <b>firemní kultura</b>. Ta pro nás bývá jednou z nejpodstatnějších komponent. 
                               U nás v <b>Netvertisement</b> se snažíme soustředit na jednu věc a plynule ji ovládat. V našem přépadě jsou to <b>Google Ads</b>. 
@@ -225,7 +236,7 @@
 
                      <div class="col-md-5">
                         <div class="titlepage">
-                           <h1>Google Ads</h1>
+                           <h1 >Google Ads</h1>
                            
                         </div>
                         <div class="team_img">
@@ -235,8 +246,8 @@
                    
                      <div class="col-md-6 offset-md-1">
                         <div class="titlepage" >
-                           <h2>Proč Google Ads?</h2>
-                           <p>Stejně jako <b>závodník ve F1</b> si musíme vybrat vozidlo, které nás <b>doveze přímo do cíle</b>. <b>Google Ads</b> byl tou naší volbou a existuje proto mnoho důvodů. Google není jen nejpoužívanější vyhledávač, ovšem také <b>největší databáze informací</b>. 
+                           <h2 lng-tag="whyGoogleAds">Proč Google Ads?</h2>
+                           <p lng-tag="primaryPlatform">Stejně jako <b>závodník ve F1</b> si musíme vybrat vozidlo, které nás <b>doveze přímo do cíle</b>. <b>Google Ads</b> byl tou naší volbou a existuje proto mnoho důvodů. Google není jen nejpoužívanější vyhledávač, ovšem také <b>největší databáze informací</b>. 
                               Z toho důvodu je naší primární platformou, na které provozujeme reklamní kampaně pro naše klienty. Přes léta vyhledávání nasbíral Google velkou kvantitu dat o jeho uživatelích, které zjednodušuje proces <b>zacílení na Vaší cílovou skupinu</b>. 
                               Také z pohledu Googlu se na jeho vyhledávání podílí lidé, kteří předem <b>projevovali zájem</b> o koupi produktu či služby. V důsledku to pak znamená značně <b>vyšší konverze</b> oproti sociálním sítím či-li u větší část lidí bude pravděpodobnost, že <b>se stanou Vašimi stálými zákazníky</b> a zakoupí si u Vás zvolené produkty/služby. 
                            </p>
@@ -251,8 +262,8 @@
                            
                            <div class="col-md-6 offset-md-1">
                               <div class="titlepage" >
-                                 <h2>Proč spolupráce s námi?</h2>
-                                 <p> Pokud jste se dočetli o nás až sem, pravděpodobně Vás zaujala alespoň jedna z dvou věcí, <b>naše služby nebo naše firemní kultura</b>.
+                                 <h2 lng-tag="whyUs">Proč spolupráce s námi?</h2>
+                                 <p lng-tag="whyUsTxt"> Pokud jste se dočetli o nás až sem, pravděpodobně Vás zaujala alespoň jedna z dvou věcí, <b>naše služby nebo naše firemní kultura</b>.
                                      Pro nás náš cíl zůstává stále neměnným, chceme pracovat bok po boku s našimi klienty, pomoct jim rozrůstat jejich podnik, <b>dosáhnout dalších milníků</b> a <b>společně dostat naše klienty do cílové roviny s výsledky, které si zaslouží</b>.
                                      Snažíme se jen spolupracovat s firmami, které <b>vědí kam se chtějí dostat a jsou ochotny do toho jít naplno</b>. Pokud to co popisujeme, zní jako Váš podnik, tak neváhejte si zde na našich stránek <b>objednat online schůzku nebo osobní schůzku přes náš mail v sekci kontakty</b>.
                                      Budume se na Vás těšit, <b>tým Netvertisement</b>.
@@ -289,8 +300,8 @@
       <div class="contact" id="contact">
          <div class="container">
             <div class="row">
-               <h1>Kontakt</h1>
-               <p>Pokud chcete vědět více můžete se na nás obrátit na email, Instagram či LinkedIn.
+               <h1 lng-tag="contact">Kontakt</h1>
+               <p lng-tag="ifYouWantMore">Pokud chcete vědět více můžete se na nás obrátit na email, Instagram či LinkedIn.
                Rádi Vám se vším poradíme.
                Pro zájemce je možné sjednat online nebo osobní schůzku.
                Osobní schůzku je nutné sjednat přes email.
@@ -337,6 +348,8 @@
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
+      <script src="js/translate.js"></script>
+      <script src="js/index.js"></script>
    </body>
 </html>
 
